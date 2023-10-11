@@ -11,7 +11,7 @@ export default function Header({darkMode, toggleDarkMode}: {darkMode: boolean, t
   return (
     <header>
       <div className='container d-flex justify-content-between align-items-center position-relative p-3'>
-        <img src={logo} alt="logo" />
+        <img className="logo" src={logo} alt="logo" />
         <nav className='d-md-flex'>
           <ul className={`${isExpanded ? '' : 'd-none'} d-md-flex nav-menu align-items-center m-0 p-0`}>
             <li><a href='#'>About</a></li>

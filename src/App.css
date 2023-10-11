@@ -8,6 +8,25 @@ html {
   margin: 0;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn,
+h1,
+h2,
+h3 {
+  font-family: 'Big Shoulders Display', sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.btn {
+  font-weight: 800;
+}
+
 .dark {
   background-color: black;
 }
@@ -43,6 +62,10 @@ a:active,
   opacity: 0.3;
 }
 
+.btn {
+  border-width: 3px;
+}
+
 .icon {
   width: 30px;
   height: 30px;
@@ -51,6 +74,34 @@ a:active,
 
 .dark .icon {
   fill: #e2e2e2;
+}
+
+.hero-title {
+  font-size: 4rem;
+}
+
+.husam {
+  color: #0B6FF4;
+}
+
+.hero-btn {
+  font-size: 2rem;
+  border: 3px solid #0B6FF4;
+  color: #0B6FF4;
+}
+
+.dark .hero {
+  color: #e2e2e2;
+}
+
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 2.75rem;
+  }
+
+  .hero-btn {
+    font-size: 1.75rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -67,5 +118,8 @@ a:active,
   }
   .dark .nav-menu {
     background-color: #2e2e2e;
+  }
+  .logo {
+    height: 50px;
   }
 }
