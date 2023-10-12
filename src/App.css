@@ -24,8 +24,22 @@ h1 {
   font-weight: 900;
 }
 
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
 p {
   line-height: 2;
+  color: rgba(46, 46, 46, 0.75);
+}
+
+.dark p {
+  color: rgba(226, 226, 226, 0.75);
 }
 
 .btn {
@@ -49,10 +63,6 @@ a {
   color: #2e2e2e;
 }
 
-h2 {
-  font-size: 3rem;
-}
-
 .d-flex,
 .d-md-flex {
   gap: 1em;
@@ -65,11 +75,6 @@ h2 {
 a:hover:not(.btn) {
   text-decoration: underline;
 }
-
-/* a:hover,
-.btn:hover {
-  opacity: 0.75;
-} */
 
 a:active,
 .btn:active {
@@ -123,6 +128,17 @@ a:active,
   color: #e2e2e2;
 }
 
+.about h2 {
+  text-align: left;
+}
+
+.skill-img {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 1200px) {
   .hero-title {
     font-size: 2.75rem;
@@ -130,6 +146,10 @@ a:active,
 
   h2 {
     font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 2.25rem;
   }
 
   .btn {
@@ -155,7 +175,7 @@ a:active,
   .logo {
     height: 50px;
   }
-  h2 {
+  .about h2 {
     text-align: center;
   }
 }

@@ -4,6 +4,7 @@ import './App.css'
 import Header from './Components/Header'
 import Hero from './Components/Hero';
 import About from './Components/About';
+import Skills from './Components/Skills';
 
 export default function App() {
   const [darkMode, setDatkMode] = React.useState(false);
@@ -17,6 +18,7 @@ export default function App() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero />
       <About />
+      <Skills />
     </div>
   )
 }
