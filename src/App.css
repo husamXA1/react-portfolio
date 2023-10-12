@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  color: #2e2e2e;
 }
 
 .btn,
@@ -21,6 +22,10 @@ h3 {
 
 h1 {
   font-weight: 900;
+}
+
+p {
+  line-height: 2;
 }
 
 .btn {
@@ -44,7 +49,16 @@ a {
   color: #2e2e2e;
 }
 
-.dark a {
+h2 {
+  font-size: 3rem;
+}
+
+.d-flex,
+.d-md-flex {
+  gap: 1em;
+}
+
+.dark a:not(.btn) {
   color: #e2e2e2;
 }
 
@@ -52,10 +66,10 @@ a:hover:not(.btn) {
   text-decoration: underline;
 }
 
-a:hover,
+/* a:hover,
 .btn:hover {
   opacity: 0.75;
-}
+} */
 
 a:active,
 .btn:active {
@@ -63,8 +77,13 @@ a:active,
 }
 
 .btn {
-  border-width: 3px;
+  font-size: 2rem;
   border-radius: 0.5em;
+  padding: 0.25em 0.75em;
+}
+
+.btn-primary {
+  background-color: #0B6FF4;
 }
 
 .icon {
@@ -86,7 +105,6 @@ a:active,
 }
 
 .hero-btn {
-  font-size: 2rem;
   border: 3px solid #0B6FF4;
   color: #0B6FF4;
 }
@@ -95,12 +113,26 @@ a:active,
   color: #e2e2e2;
 }
 
+.about {
+  background-color: #eee;
+  color: #2e2e2e;
+}
+
+.dark .about {
+  background-color: #111;
+  color: #e2e2e2;
+}
+
 @media (max-width: 1200px) {
   .hero-title {
     font-size: 2.75rem;
   }
 
-  .hero-btn {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .btn {
     font-size: 1.75rem;
   }
 }
@@ -114,13 +146,16 @@ a:active,
     left: 0;
     text-align: center;
     background-color: #e2e2e2;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+    border-radius: 1em;
+    padding: 1em!important;
   }
   .dark .nav-menu {
     background-color: #2e2e2e;
   }
   .logo {
     height: 50px;
+  }
+  h2 {
+    text-align: center;
   }
 }

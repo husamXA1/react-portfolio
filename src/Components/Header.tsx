@@ -14,10 +14,10 @@ export default function Header({darkMode, toggleDarkMode}: {darkMode: boolean, t
         <img className="logo" src={logo} alt="logo" />
         <nav className='d-md-flex'>
           <ul className={`${isExpanded ? '' : 'd-none'} d-md-flex nav-menu align-items-center m-0 p-0`}>
-            <li><a href='#'>About</a></li>
-            <li><a href='#'>Skills</a></li>
-            <li><a href='#'>Projects</a></li>
-            <li><a href='#'>Contact</a></li>
+            <li><a href='#about'>About</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#projects'>Projects</a></li>
+            <li><a href='#contact'>Contact</a></li>
             <li>
               <button className='btn btn-outline' onClick={toggleDarkMode}>
                 {
