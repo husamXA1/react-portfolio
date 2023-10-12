@@ -20,6 +20,18 @@ h3 {
   font-family: 'Big Shoulders Display', sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  color: #2e2e2e;
+}
+
+.dark h1,
+.dark h2,
+.dark h3 {
+  color: #e2e2e2;
+}
+
 h1 {
   font-weight: 900;
 }
