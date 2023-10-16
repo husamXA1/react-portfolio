@@ -1,13 +1,29 @@
 export default function Footer() {
+
+  const sendEmail = () => {
+    const subjectInput = document.getElementById('emailSubject') as HTMLInputElement;
+    const bodyInput = document.getElementById('emailBody') as HTMLTextAreaElement;
+
+    if (subjectInput && bodyInput) {
+      const subject = subjectInput.value;
+      const body = bodyInput.value;
+
+      const mailtoLink = `mailto:husamug@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+      // Open the mailto link in a new window or tab
+      window.location.href = mailtoLink;
+    }
+  };
+
   return (
     <footer className='footer pt-5'>
       <div className="container">
         <div className="d-md-flex align-items-center" id="contact">
           <div className="d-flex flex-column align-items-start w-100 my-3">
             <h2>Send A Message</h2>
-            <input className="p-2 w-75" type="text" placeholder="Your title..." />
-            <textarea className="w-100 p-2" name="" id="" placeholder="Your message..."></textarea>
-            <button className='btn'>SEND</button>
+            <input id="emailSubject" name="subject" className="p-2 w-75" type="text" placeholder="Your title..." />
+            <textarea id="emailBody" className="w-100 p-2" name="body" placeholder="Your message..."></textarea>
+            <button className='btn' onClick={sendEmail}>SEND</button>
           </div>
 
           <div className="contact-info w-100">
