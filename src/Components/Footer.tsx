@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className='footer pt-5'>
       <div className="container">
-        <div className="d-md-flex align-items-center">
+        <div className="d-md-flex align-items-center" id="contact">
           <div className="d-flex flex-column align-items-start w-100 my-3">
             <h2>Send A Message</h2>
             <input className="p-2 w-75" type="text" placeholder="You title..." />

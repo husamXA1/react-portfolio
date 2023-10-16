@@ -4,7 +4,7 @@ import blogrImg from "/assets/blogr.png";
 
 export default function Projects() {
   return (
-    <div className="projects py-5">
+    <div className="projects py-5" id="projects">
       <div className="container">
         <h2>PROJECTS</h2>
         <div className="projects-grid">
