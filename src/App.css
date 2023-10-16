@@ -130,12 +130,14 @@ a:active,
   color: #e2e2e2;
 }
 
-.about {
+.about,
+.projects {
   background-color: #eee;
   color: #2e2e2e;
 }
 
-.dark .about {
+.dark .about,
+.dark .projects {
   background-color: #111;
   color: #e2e2e2;
 }
@@ -149,6 +151,17 @@ a:active,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.projects a {
+  color: #0B6FF4!important;
+  text-decoration: underline;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 1.5em;
+}
+
+.project-card:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 1200px) {
