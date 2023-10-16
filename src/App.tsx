@@ -6,6 +6,7 @@ import Hero from './Components/Hero';
 import About from './Components/About';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
+import Footer from './Components/Footer';
 
 export default function App() {
   const [darkMode, setDatkMode] = React.useState(false);
@@ -21,6 +22,7 @@ export default function App() {
       <About />
       <Skills />
       <Projects />
+      <Footer />
     </div>
   )
 }

@@ -164,6 +164,34 @@ a:active,
   flex-direction: row-reverse;
 }
 
+.footer {
+  background-color: #2e2e2e;
+}
+
+.dark .footer {
+  background-color: #000;
+}
+
+.footer p,
+.footer h2,
+.footer h3 {
+  color: #e2e2e2;
+}
+
+.footer svg {
+  height: 25px;
+  fill: #e2e2e2;
+}
+
+.footer .btn {
+  border: 3px solid #e2e2e2;
+  color: #e2e2e2;
+}
+
+.footer textarea {
+  height: 250px;
+}
+
 @media (max-width: 1200px) {
   .hero-title {
     font-size: 2.75rem;
