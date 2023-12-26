@@ -14,7 +14,10 @@ export default function About() {
             Currently a third-year software engineering student, seeking to
             leverage skills and knowledge to contribute to innovative web solutions.
           </p>
-          <a href="#contact" className="btn btn-primary">GET IN TOUCH</a>
+          <div className="d-flex flex-column flex-lg-row">
+            <a href="#contact" className="btn btn-primary">GET IN TOUCH</a>
+            <a target="_blank" href="https://drive.google.com/file/d/14RxX4ksOx3EyTrMKtWGUwHupPq-YLjGL/view?usp=drive_link" className="btn btn-outline-primary">Download CV</a>
+          </div>
         </div>
         <div className="w-100">
           <img src={aboutImg} alt="about-img" className="img-fluid" />
